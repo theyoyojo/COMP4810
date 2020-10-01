@@ -1,6 +1,6 @@
 \documentclass{article}
 \usepackage{graphicx, url}
-\usepackage[margin=1.5in]{geometry}
+\usepackage[margin=1in]{geometry}
 
 \author{Joel Savitz}
 
@@ -11,7 +11,7 @@
    \begin{center}
        \vspace*{1cm}
 
-	\textbf{Fedora Linux Development for the Raspbery Pi Platform \\
+	\textbf{Fedora Linux Development for the Raspberry Pi Platform \\
 		\small Backwards compatibility for a popular GPIO API}
 
        \vspace{0.5cm}
@@ -35,31 +35,35 @@
             
        Honors Mentor: Professor Bill Moloney, Department of Computer Science
 
-\noindent\begin{tabular}{ll}
-	\\[4ex]
-	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
-	Joel Savitz, Author & Date \\[5ex]
-	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
-	Professor Bill Moloney, Honors Mentor & Date \\[5ex]
-	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
-	Jeff Brown, Committee Member & Date \\[5ex]
-\end{tabular}
+       Committee Member: Jeff Brown, Red Hat
+
+% \noindent\begin{tabular}{ll}
+% 	\\[4ex]
+% 	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
+% 	Joel Savitz, Author & Date \\[5ex]
+% 	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
+% 	Professor Bill Moloney, Honors Mentor & Date \\[5ex]
+% 	\makebox[4in]{\hrulefill} & \makebox[1.5in]{\hrulefill} \\
+% 	Jeff Brown, Committee Member & Date \\[5ex]
+% \end{tabular}
 
             
    \end{center}
 \end{titlepage}
 
-\section{Abstract}
+\begin{abstract}
 
 This document summarizes
-the primary achiement
+the primary achievement
 of my honors project.
 First, I give some context
 for the origin of the project
 and reasoning for its direction.
 Then, I describe the status of the project,
-and include the functional and technical specifcation
+and include the functional and technical specification
 of the primary software output.
+
+\end{abstract}
 
 \section{Background}
 
@@ -73,7 +77,7 @@ was an interesting proposition to me.
 As it turns out,
 I walked into the founding meeting
 of an initiative to expand
-the Red Hat Metro Bostron Research Interest Group
+the Red Hat Metro Boston Research Interest Group
 to the University of Massachusetts Lowell.
 They had projects and mentors
 and were in need of students.
@@ -86,7 +90,7 @@ were politely rejected,
 a few friends and I were introduced to Jeff Brown.
 He teaches an IoT class at UML during the spring semester,
 and he wanted to improve Fedora usability
-on the Raspbery Pi platform,
+on the Raspberry Pi platform,
 since as a Red Hat associate,
 it was far more appropriate
 than the existing alternatives,
@@ -106,7 +110,7 @@ Jeff and I had a short meeting
 with Peter Robinson,
 the maintainer of
 Fedora for ARM architecture,
-and he recomended several areas
+and he recommended several areas
 of potential development.
 
 One of these was in the area
@@ -123,24 +127,24 @@ Using the provided module, one will be able to write python code to use the Rasp
 \end{quote}
 
 The implementation of this library
-was my primary achivement for this honors project.
+was my primary achievement for this honors project.
 I owe a great deal of credit
 to Fabrizio D'Angelo
 for the design and implementation
 of this library
 as much of the initial work
-was done in the style of pair programing
+was done in the style of pair programming
 during late Wednesday night sessions
 in Dandeneau Hall on UML North campus.
 
 The initial implementation of this project
 took place last fall,
 but I developed it to the point
-of feature-equivelence
+of feature-equivalence
 with RPi.GPIO in early summer 2020.
 At this time,
 I decided to write
-a functional and techincal specification
+a functional and technical specification
 to make the open source project more accessible
 to potential contributors
 and to more effectively and explicitly
@@ -171,7 +175,7 @@ as the python package manager
 does not do this automatically.
 I am currently in the process
 of packaging the library for
-the offical Fedora package repositories,
+the official Fedora package repositories,
 and that version will automatically
 install all necessary dependencies.
 
